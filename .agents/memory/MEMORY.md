@@ -1,0 +1,1 @@
+- [Sanguine Bond boundaries](sanguine-bond-stage-boundaries.md) — Stage 1 is local demo UI only; clinical decisions and exact donor locations stay out of scope.

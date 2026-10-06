@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Sanguine Bond"
+description = "A responsive emergency blood coordination prototype for hospitals, blood banks, patients, and registered donors, with local demo data and interactive UI-only workflows."
+version = "1.0.0"
+id = "artifacts/sanguine-bond"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22489
+
+[services.development]
+run = "pnpm --filter @workspace/sanguine-bond run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sanguine-bond", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/sanguine-bond/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22489"
+BASE_PATH = "/"

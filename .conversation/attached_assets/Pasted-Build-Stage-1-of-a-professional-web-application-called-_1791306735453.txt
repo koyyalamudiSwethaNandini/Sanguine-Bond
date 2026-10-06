@@ -1,0 +1,1066 @@
+Build Stage 1 of a professional web application called:
+
+SANGUINE BOND
+AI-POWERED EMERGENCY BLOOD COORDINATION PLATFORM
+
+TAGLINE:
+"Connecting Blood. Connecting Lives."
+
+IMPORTANT:
+This is Stage 1 only.
+Do NOT implement backend, database, authentication, APIs, real AI APIs, payment systems, real-time notifications, or external map APIs yet.
+
+The goal of Stage 1 is to create a complete, polished, responsive UI/UX prototype with realistic sample data and working page navigation.
+
+PROJECT CONTEXT:
+
+Sanguine Bond is an emergency blood coordination platform designed to help hospitals, blood banks, patients/authorized attendants, and registered blood donors coordinate during urgent blood requirements.
+
+The platform should help users identify potentially suitable registered donors based on:
+- Blood group
+- Required blood component
+- Donor availability
+- Approximate location/distance
+- Emergency urgency
+
+IMPORTANT MEDICAL SAFETY BOUNDARY:
+
+Sanguine Bond is only a coordination and donor-prioritization platform.
+
+It must NOT claim to determine:
+- Medical donor eligibility
+- Final blood compatibility
+- Cross-matching results
+- Transfusion safety
+- Whether a person can donate blood
+
+All medical screening, blood testing, cross-matching, compatibility verification, and final transfusion decisions must remain with qualified healthcare and blood-bank professionals.
+
+==================================================
+1. TECHNOLOGY
+==================================================
+
+Use a modern React-based web application.
+
+Preferred:
+- React
+- TypeScript
+- Tailwind CSS
+- Modern component-based architecture
+- Lucide React icons or another lightweight icon library
+
+Use local mock data only for Stage 1.
+
+Do not install unnecessary packages.
+
+Make the application easy to extend in later stages.
+
+==================================================
+2. DESIGN STYLE
+==================================================
+
+Create a premium healthcare-tech SaaS design.
+
+Visual style:
+- Clean
+- Modern
+- Professional
+- Trustworthy
+- Human-centered
+- Emergency-focused
+- Attractive enough for a college project demonstration
+
+Primary visual identity:
+- Deep red / crimson for blood and emergency actions
+- White and very light neutral backgrounds
+- Dark navy text
+- Subtle green for available/verified status
+- Amber/orange for warning or urgent status
+
+Avoid:
+- Excessive red everywhere
+- Cartoonish medical graphics
+- Generic template appearance
+- Overly rounded childish UI
+- Excessive animations
+
+Use:
+- Clean cards
+- Soft shadows
+- Consistent spacing
+- Professional typography
+- Clear hierarchy
+- Status badges
+- Icons
+- Responsive tables
+- Dashboard cards
+- Modern navigation
+
+The design should look like a real healthcare technology product.
+
+==================================================
+3. BRANDING
+==================================================
+
+Brand name:
+
+Sanguine Bond
+
+Logo concept:
+Create a simple modern logo using a blood drop combined with a connection/link/bond concept.
+
+Header:
+
+Sanguine Bond
+
+Tagline:
+
+"Connecting Blood. Connecting Lives."
+
+Use the logo consistently across the application.
+
+==================================================
+4. LANDING PAGE
+==================================================
+
+Create a polished landing page.
+
+Hero section:
+
+Heading:
+"Connecting Blood. Connecting Lives."
+
+Subheading:
+"An intelligent emergency blood coordination platform that helps hospitals, blood banks, patients, and registered donors coordinate faster during critical blood requirements."
+
+Primary CTA:
+"Request Blood"
+
+Secondary CTA:
+"Become a Donor"
+
+Also include:
+"How It Works"
+
+Hero visual:
+Create a professional visual showing the connection between:
+Hospital → Blood Requirement → Smart Matching → Donor
+
+Do not use external image URLs.
+
+==================================================
+5. LANDING PAGE SECTIONS
+==================================================
+
+Add the following sections:
+
+A. Emergency Blood Coordination
+
+Explain:
+During emergencies, finding a matching blood group alone may not be enough. Potential donors also need to be available and reachable within the required timeframe.
+
+B. How Sanguine Bond Works
+
+Show 4 steps:
+
+1. Create Emergency Request
+2. Find Potential Matches
+3. Notify Available Donors
+4. Verify and Coordinate
+
+C. Smart Matching
+
+Explain that the platform prioritizes potential donors using:
+- Blood requirement
+- Blood component
+- Availability
+- Approximate distance
+- Emergency urgency
+
+Clearly state:
+"Potential coordination match — final medical eligibility and compatibility must be verified by healthcare professionals."
+
+D. For Donors
+
+Benefits:
+- View nearby emergency requests
+- Update availability
+- Respond to requests
+- Track donation history
+- Receive emergency alerts
+
+CTA:
+"Register as Donor"
+
+E. For Hospitals
+
+Benefits:
+- Create emergency requests
+- Find potential donors
+- Track requests
+- Coordinate with blood banks
+- View request status
+
+CTA:
+"Hospital Login"
+
+F. For Blood Banks
+
+Benefits:
+- Manage blood component inventory
+- View emergency requirements
+- Coordinate with hospitals
+- Track availability
+
+CTA:
+"Blood Bank Portal"
+
+G. Trust & Safety
+
+Include:
+- Verified hospitals
+- Verified blood banks
+- Registered donors
+- Privacy-aware location display
+- Healthcare professional verification
+
+H. Statistics section
+
+Use sample UI statistics:
+
+15,240+
+Registered Donors
+
+328
+Hospitals Connected
+
+1,840
+Emergency Requests Coordinated
+
+92%
+Potential Match Response Rate
+
+Clearly label these as:
+"Demo statistics"
+
+==================================================
+6. ROLE SELECTION
+==================================================
+
+Create a role-selection page.
+
+Title:
+"How would you like to continue?"
+
+Four role cards:
+
+1. Donor
+Icon: Heart / Droplet
+
+Description:
+"Respond to emergency blood requests and manage your availability."
+
+Button:
+"Continue as Donor"
+
+2. Hospital
+Icon: Hospital
+
+Description:
+"Create emergency blood requests and coordinate potential donors."
+
+Button:
+"Continue as Hospital"
+
+3. Blood Bank
+Icon: Flask / Building
+
+Description:
+"Manage blood component availability and coordinate emergency requirements."
+
+Button:
+"Continue as Blood Bank"
+
+4. Patient / Authorized Attendant
+Icon: User / HeartPulse
+
+Description:
+"Submit and track an emergency blood coordination request through an authorized hospital or coordinator."
+
+Button:
+"Continue as Patient"
+
+Also provide:
+"Admin Portal"
+
+==================================================
+7. DONOR UI
+==================================================
+
+Create the following donor pages using mock data:
+
+/donor
+
+Dashboard.
+
+Include:
+
+Welcome:
+"Good evening, Rajesh"
+
+Availability card:
+"Available to Donate"
+Toggle ON/OFF
+
+Emergency requests nearby:
+
+Request cards containing:
+
+Blood Group:
+O+
+
+Component:
+Whole Blood
+
+Urgency:
+Critical
+
+Distance:
+4.2 km
+
+Required Units:
+2
+
+Hospital:
+AIIMS New Delhi
+
+Time:
+Requested 12 minutes ago
+
+Button:
+"View Request"
+
+Button:
+"Respond"
+
+Dashboard statistics:
+
+Donations:
+4
+
+Requests Responded:
+7
+
+Lives Supported:
+4
+
+Last Donation:
+42 days ago
+
+==================================================
+8. DONOR PROFILE
+==================================================
+
+Create:
+
+/donor/profile
+
+Fields:
+
+Name
+Blood Group
+Date of Birth placeholder
+Phone
+Email
+City
+Area
+Availability
+Last Donation Date
+Verification Status
+
+Do NOT display sensitive information unnecessarily.
+
+Show:
+
+"Verified Donor"
+
+Add:
+
+"Update Availability"
+
+button.
+
+==================================================
+9. NEARBY REQUESTS PAGE
+==================================================
+
+Create:
+
+/donor/requests
+
+Include filters:
+
+Blood Group
+Component
+Urgency
+Distance
+Availability
+
+Request cards.
+
+Use sample requests:
+
+O+
+A+
+B+
+AB+
+O-
+
+Include status badges:
+
+Critical
+Urgent
+Normal
+
+==================================================
+10. HOSPITAL UI
+==================================================
+
+Create:
+
+/hospital
+
+Hospital dashboard.
+
+Header:
+"AIIMS New Delhi"
+
+Dashboard statistics:
+
+Active Emergency Requests
+Potential Matches
+Responses Received
+Requests Fulfilled
+
+Main CTA:
+
+"+ Create Emergency Request"
+
+Emergency request cards:
+
+Request ID
+Blood Group
+Component
+Units Required
+Urgency
+Created Time
+Potential Matches
+Status
+
+Statuses:
+
+Searching
+Matching
+Responses Received
+Verification
+Fulfilled
+
+==================================================
+11. CREATE EMERGENCY REQUEST PAGE
+==================================================
+
+Create:
+
+/hospital/create-request
+
+Form:
+
+Patient/Request Reference
+Blood Group
+Blood Component
+Units Required
+Urgency
+Required By
+Hospital Location
+Additional Notes
+
+Blood groups:
+
+A+
+A-
+B+
+B-
+AB+
+AB-
+O+
+O-
+
+Components:
+
+Whole Blood
+Packed Red Cells
+Platelets
+Plasma
+Cryoprecipitate
+
+Urgency:
+
+Critical
+Urgent
+Normal
+
+Primary button:
+
+"Create Emergency Request"
+
+After clicking, show a professional confirmation modal:
+
+"Emergency request created"
+
+Then:
+
+"Searching for potential coordination matches..."
+
+Do not actually perform matching yet.
+
+==================================================
+12. SMART MATCHING PREVIEW PAGE
+==================================================
+
+Create:
+
+/hospital/matches
+
+This is a UI demonstration of the future Smart Matching Engine.
+
+Title:
+
+"Potential Donor Matches"
+
+Show explanation:
+
+"Potential matches are prioritized using blood requirement, availability, approximate distance, and emergency urgency. Final donor eligibility and compatibility must be verified by authorized healthcare professionals."
+
+Create donor cards.
+
+Example:
+
+Rajesh Kumar
+O+
+
+94% Potential Match
+
+Available Now
+3.2 km away
+
+Match factors:
+Blood requirement: Strong
+Availability: Strong
+Distance: Strong
+Urgency priority: High
+
+Buttons:
+"View Profile"
+"Notify Donor"
+
+Second:
+
+Priya Sharma
+O+
+
+88% Potential Match
+
+Available Now
+6.8 km away
+
+Third:
+
+Arun Kumar
+O+
+
+79% Potential Match
+
+Available
+11.4 km away
+
+IMPORTANT:
+Use the term "Potential Match" rather than "Compatible Donor".
+
+==================================================
+13. BLOOD BANK UI
+==================================================
+
+Create:
+
+/blood-bank
+
+Blood bank dashboard.
+
+Name:
+"Red Cross Blood Bank"
+
+Inventory cards:
+
+A+
+Packed Red Cells
+12 units
+Available
+
+O+
+Packed Red Cells
+18 units
+Available
+
+B+
+Platelets
+7 units
+Low Stock
+
+AB+
+Plasma
+4 units
+Low Stock
+
+Show:
+
+Total Available Units
+Low Stock Components
+Emergency Requests
+Nearby Hospitals
+
+Create a clean inventory table.
+
+Columns:
+
+Blood Group
+Component
+Units Available
+Status
+Last Updated
+
+==================================================
+14. PATIENT / ATTENDANT UI
+==================================================
+
+Create:
+
+/patient
+
+Dashboard.
+
+Title:
+
+"Track Your Blood Coordination Request"
+
+Request card:
+
+Request ID:
+SB-2026-00124
+
+Blood Group:
+O+
+
+Component:
+Packed Red Cells
+
+Units:
+2
+
+Urgency:
+Critical
+
+Hospital:
+AIIMS New Delhi
+
+Status:
+Potential Donors Identified
+
+Show a progress tracker:
+
+Request Created
+↓
+Searching
+↓
+Potential Matches
+↓
+Donor Response
+↓
+Verification
+↓
+Fulfilled
+
+Clearly state:
+
+"Medical verification and transfusion decisions are handled by authorized healthcare professionals."
+
+==================================================
+15. ADMIN DASHBOARD UI
+==================================================
+
+Create:
+
+/admin
+
+Professional admin dashboard.
+
+Statistics:
+
+Registered Donors
+Verified Hospitals
+Verified Blood Banks
+Active Emergency Requests
+Requests Fulfilled
+Potential Matches
+
+Add charts using mock data.
+
+Chart 1:
+Emergency requests over the last 14 days.
+
+Chart 2:
+Blood group demand.
+
+Chart 3:
+Request status distribution.
+
+Use a clean dashboard layout.
+
+==================================================
+16. REQUEST TRACKING
+==================================================
+
+Create:
+
+/requests
+
+Show a table of emergency requests.
+
+Columns:
+
+Request ID
+Blood Group
+Component
+Hospital
+Urgency
+Potential Matches
+Status
+Created
+Action
+
+Use status badges.
+
+Clicking a request opens a detailed request page.
+
+==================================================
+17. NOTIFICATIONS UI
+==================================================
+
+Create:
+
+/notifications
+
+Show sample notifications:
+
+"Critical O+ blood request near your area."
+
+"Hospital coordinator responded to your request."
+
+"Your availability status was updated."
+
+"Emergency request SB-2026-00124 has received 3 donor responses."
+
+Use notification cards with timestamps.
+
+This is UI only.
+Do not implement real notifications yet.
+
+==================================================
+18. MAP UI
+==================================================
+
+Create:
+
+/map
+
+Create a visual map-style interface using CSS/mock UI only.
+
+Do NOT use Google Maps API yet.
+
+Show approximate locations of:
+
+Hospitals
+Blood Banks
+Potential Donors
+
+Use markers/cards.
+
+Important privacy rule:
+
+Never display exact donor home addresses.
+
+Show only approximate area/distance.
+
+Example:
+
+"Potential donor — 3.2 km away"
+
+==================================================
+19. NAVIGATION
+==================================================
+
+Create a responsive navigation system.
+
+Desktop:
+
+Logo
+Home
+How It Works
+For Donors
+For Hospitals
+For Blood Banks
+Emergency Requests
+About
+
+Right side:
+
+Login
+Register
+
+After role selection, dashboard navigation should change according to role.
+
+Mobile:
+Use a hamburger menu.
+
+==================================================
+20. LOGIN / REGISTER UI
+==================================================
+
+Create beautiful UI pages:
+
+/login
+/register
+
+Login fields:
+
+Email
+Password
+
+Register role selection:
+
+Donor
+Hospital
+Blood Bank
+Patient / Authorized Attendant
+
+For now, forms are UI-only.
+
+Do not implement real authentication.
+
+Show a small message:
+
+"Authentication will be connected in Stage 2."
+
+==================================================
+21. ABOUT PAGE
+==================================================
+
+Create:
+
+/about
+
+Include:
+
+What is Sanguine Bond?
+
+Why it was created
+
+The problem
+
+How it helps
+
+Who can use it
+
+Safety and verification
+
+Technology vision
+
+Include this statement:
+
+"Sanguine Bond supports emergency coordination. It does not replace blood banks, medical screening, cross-matching, or professional transfusion decisions."
+
+==================================================
+22. RESPONSIVE DESIGN
+==================================================
+
+The entire application must work properly on:
+
+Desktop
+Laptop
+Tablet
+Mobile
+
+Do not allow horizontal scrolling.
+
+Cards should stack properly on mobile.
+
+Tables should become horizontally scrollable or responsive cards.
+
+Navigation must work on mobile.
+
+==================================================
+23. ACCESSIBILITY
+==================================================
+
+Use:
+
+Readable font sizes
+Good contrast
+Clear labels
+Keyboard-friendly buttons
+Visible focus states
+Descriptive icons
+Accessible form labels
+
+Do not rely only on color to communicate status.
+
+==================================================
+24. SAMPLE DATA
+==================================================
+
+Use realistic fictional/demo data only.
+
+Do NOT use real people's personal information.
+
+Create sample:
+
+15 donors
+5 hospitals
+3 blood banks
+10 emergency requests
+
+Use fictional names and demo contact information.
+
+Clearly treat all data as demo data.
+
+==================================================
+25. IMPORTANT UI MESSAGES
+==================================================
+
+Use these messages where appropriate:
+
+"Potential coordination match"
+
+"Final medical eligibility must be verified by authorized healthcare professionals."
+
+"Blood availability shown here is for coordination purposes."
+
+"Donor availability is self-reported and should be confirmed."
+
+"Exact donor locations are not displayed for privacy."
+
+==================================================
+26. ERROR / EMPTY STATES
+==================================================
+
+Create professional empty states.
+
+Examples:
+
+"No emergency requests found."
+
+"No potential matches found."
+
+"No notifications yet."
+
+"No blood component inventory available."
+
+"No donors currently marked as available."
+
+==================================================
+27. LOADING STATES
+==================================================
+
+Create skeleton/loading states for:
+
+Dashboard cards
+Donor matching
+Emergency requests
+Notifications
+Inventory
+
+==================================================
+28. FINAL UI QUALITY
+==================================================
+
+The final result should feel like a real startup/healthcare technology product.
+
+It should NOT look like a basic college CRUD application.
+
+Prioritize:
+
+1. Professional UI
+2. Clear user journey
+3. Emergency-focused experience
+4. Excellent dashboard design
+5. Consistent branding
+6. Responsive design
+7. Clear status indicators
+8. Good typography
+9. Strong visual hierarchy
+10. Easy navigation
+
+==================================================
+29. STAGE 1 RESTRICTION
+==================================================
+
+STOP after completing the UI/UX prototype.
+
+Do NOT add:
+
+- Real database
+- Supabase
+- Firebase
+- MongoDB
+- Real authentication
+- Real AI API
+- Gemini API
+- OpenAI API
+- SMS API
+- Email API
+- Google Maps API
+- Real-time notifications
+- Payment integration
+
+Use mock data and local UI state only.
+
+The application should still feel interactive through buttons, modals, navigation, filters, tabs, toggles, and sample data.
+
+==================================================
+30. FINAL REQUIREMENT
+==================================================
+
+Generate the complete Stage 1 Sanguine Bond web application now.
+
+Make every page visually consistent.
+
+Make all navigation links work.
+
+Make buttons open the appropriate pages or UI modals.
+
+Use realistic demo data.
+
+Keep the code clean and modular so Stage 2 can later add:
+
+- Authentication
+- Database
+- Real donor profiles
+- Emergency request storage
+- Smart matching engine
+- Maps
+- Notifications
+- Verification
+- Analytics
+
+Do not ask me unnecessary questions.
+
+Build Stage 1 completely.
